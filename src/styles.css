@@ -1,0 +1,249 @@
+/* GLOBAL STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700;900&display=swap");
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgb(0 0 0 / 50%);
+}
+.Nav,
+.Hero,
+.About,
+.Portfolio,
+.Contact {
+    width: 100%;
+    /* text-align: center; */
+    font-family: "Roboto Slab", serif;
+}
+.Hero,
+.About,
+.Portfolio,
+.Contact {
+    padding: 10vh 2rem 2rem 2rem;
+}
+h2 {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    margin: 2rem;
+    color: #a0a0a0;
+}
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* HERO STYLES */
+.Hero .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 10vh - 4rem);
+}
+.Hero .container div:first-child {
+    font-size: 3rem;
+    transform: translateX(-4rem);
+}
+.Hero .container div:last-child {
+    font-size: 1.5rem;
+    transform: translateX(2rem);
+}
+
+/* SOCIAL LINKS STYLES */
+.social-links {
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    font-size: 2rem;
+    color: #ffffff;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+}
+.social-links a {
+    padding: 1rem;
+    color: inherit;
+}
+
+/* NAV STYLES */
+.Nav {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    justify-content: flex-end;
+    /* justify-content: center; */
+    position: fixed;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e2e2;
+    /* box-shadow: 0 0 5px 1px rgb(0 0 0 / 50%); */
+}
+.Nav h1 a,
+.Nav ul a {
+    text-decoration: none;
+    color: inherit;
+}
+.Nav h1 {
+    text-align: center;
+}
+.Nav ul {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+/* ABOUT STYLES */
+.About .about-paragraph {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5rem;
+    /* text-align: justify; */
+}
+.About .skills-container {
+    padding-top: 2rem;
+}
+.About .skills-container .skills-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 4rem);
+}
+.About .skills-container .skills-icons div:last-child {
+    grid-column: 2;
+}
+.About .skills-container .skills-icons div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.About .skills-container .skills-icons div svg {
+    font-size: 2rem;;
+}
+
+/* PORTFOLIO STYLES */
+.PortfolioCard {
+    margin-bottom: calc(4% + 50px + 2rem);
+}
+.Portfolio .PortfolioCard .image-container img {
+    width: 100%;
+}
+.Portfolio .PortfolioCard .content .description {
+    font-family: "Roboto", sans-serif;
+    color: #a0a0a0;
+    line-height: 1.5rem;
+    /* padding: 2rem 0; */
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.Portfolio .PortfolioCard .content .portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+.Portfolio .PortfolioCard .content .portfolio-buttons a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    min-height: 40px;
+    border-radius: 20px;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+.Portfolio .PortfolioCard .content .portfolio-buttons a:last-child {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    margin-left: 1rem;
+}
+.Portfolio .card-arrows-container {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    /* border-top: 1px solid #c2c2c2; */
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
+    background: #ffffff;
+}
+.Portfolio .card-arrows-container .card-arrows {
+    font-family: "Roboto", sans-serif;
+    font-size: .9rem;
+    bottom: 0px;
+    display: flex;
+    color: #ffffff;
+}
+.Portfolio .card-arrows #left, .Portfolio .card-arrows-container .card-arrows #right {
+    position: relative;
+    cursor: pointer;
+    width: 50%;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    margin: 5% 2%;
+}
+.Portfolio .card-arrows #left::after, .Portfolio .card-arrows-container .card-arrows #right::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+/* CONTACT STYLES */
+.Contact form {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 10vh - 8rem - 2rem);
+}
+.Contact form input,
+.Contact form textarea {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.Contact form input {
+    height: 15px;
+}
+.Contact form textarea {
+    height: 40%;
+    resize: none;
+}
+.Contact form button {
+    font-family: "Roboto", sans-serif;
+    border: 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    min-height: 40px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background: #000000;
+    color: #ffffff;
+}
+.Contact form p {
+    text-align: center;
+}
+.Contact .contact-links {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
