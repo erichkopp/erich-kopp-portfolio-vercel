@@ -111,7 +111,7 @@ h3 {
 .About .about-paragraph {
     font-family: "Roboto", sans-serif;
     line-height: 1.5rem;
-    /* text-align: justify; */
+    text-align: justify;
 }
 .About .skills-container {
     padding-top: 2rem;
@@ -148,6 +148,7 @@ h3 {
     /* padding: 2rem 0; */
     padding-top: 1rem;
     padding-bottom: 2rem;
+    text-align: justify;
 }
 .Portfolio .PortfolioCard .content .portfolio-buttons {
     display: flex;
