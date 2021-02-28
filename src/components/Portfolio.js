@@ -83,12 +83,12 @@ function PortfolioCard({ title, description, image, githubLink, siteLink }) {
   }
   return (
     <div className="PortfolioCard">
-      <h3>{title}</h3>
+      <h3 className="mobile-title">{title}</h3>
       <div className="image-container">
         <img src={image} className="image" alt={image} />
       </div>
       <div className="content">
-        {/* <h3>{title}</h3> */}
+        <h3 className="desktop-title">{title}</h3>
         <div className="description">{description}</div>
 
         <div className="portfolio-buttons">
