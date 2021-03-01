@@ -9,12 +9,16 @@ export default function Contact() {
       <ContactForm />
       <div className="contact-links">
         <div>
-          <FaGithub />
-          <span>GitHub</span>
+          <a href="https://github.com/erichkopp/" target="_blank" rel="noreferrer">
+            <FaGithub />
+            <span>GitHub</span>
+          </a>
         </div>
         <div>
-          <FaLinkedin />
-          <span>LinkedIn</span>
+          <a href="https://www.linkedin.com/in/erich-kopp/" target="_blank" rel="noreferrer">
+            <FaLinkedin />
+            <span>LinkedIn</span>
+          </a>
         </div>
       </div>
     </div>

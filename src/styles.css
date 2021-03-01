@@ -255,13 +255,16 @@ h3 {
     text-align: center;
 }
 .Contact .contact-links {
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     font-size: 1rem;
     display: flex;
     justify-content: space-evenly;
 }
-.Contact .contact-links div {
+.Contact .contact-links div a {
     display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
 .Contact .contact-links div span {
     padding-left: .5rem;
