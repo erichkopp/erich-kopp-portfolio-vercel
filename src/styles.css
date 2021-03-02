@@ -81,6 +81,7 @@ h3 {
 
 /* NAV STYLES */
 .Nav {
+    z-index: 1;
     height: 4rem;
     display: flex;
     flex-direction: column;

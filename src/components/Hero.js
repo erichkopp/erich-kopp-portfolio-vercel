@@ -1,19 +1,25 @@
 import { useState, useEffect } from "react";
-// import curvesBG from "../images/curvesBG.png";
+import {useSpring, animated, config} from 'react-spring'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { transform } from "typescript";
 
 export default function Hero() {
+  // const animate = useSpring({config: { duration: 2250 }, opacity: 1, from: {opacity: 0}})
+  const allTextAnimate = 
+    useSpring({
+      config: {duration: 2000},
+      delay: 100,
+      to: {opacity: 1},
+      from: {opacity: 0}
+    })
+
   return (
     <div className="Hero">
       <div className="container">
-        {/* <img
-          src={curvesBG}
-          alt={curvesBG}
-        /> */}
-        <div className="hero-text">
+        <animated.div style={allTextAnimate} className="hero-text">
           <div>erich kopp</div>
           <div>front-end developer.</div>
-        </div>
+        </animated.div>
       </div>
 
       <div className="social-links">
