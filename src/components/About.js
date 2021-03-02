@@ -3,7 +3,7 @@ import {
   DiCss3,
   DiPython,
   DiReact,
-  DiRuby,
+  DiRubyRough,
   DiJsBadge
 } from "react-icons/di";
 import { FaFigma } from "react-icons/fa";
@@ -46,7 +46,7 @@ export default function About() {
             <span>FIGMA</span>
           </div>
           <div>
-            <DiRuby />
+            <DiRubyRough />
             <span>RUBY</span>
           </div>
           <div>
