@@ -28,9 +28,7 @@ export default function App() {
   return (
     <div className="App">
       <nav className="Nav">
-        {/* <h1>
-          <Link to="/">EK</Link>
-        </h1> */}
+
         <ul>
           <li>
             <Link to="/"

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaGithub, FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 import photo from "../images/photo610.png";
@@ -29,11 +29,6 @@ export default function Portfolio() {
   return (
     <div className="Portfolio">
       <h2>PORTFOLIO</h2>
-
-      {/* <div className="card-arrows">
-        <span id="left" onClick={handleCardArrows}><FaChevronLeft />Previous</span>
-        <span id="right" onClick={handleCardArrows}>Next<FaChevronRight /></span>
-      </div> */}
 
       {
         cardNumber === 0 &&

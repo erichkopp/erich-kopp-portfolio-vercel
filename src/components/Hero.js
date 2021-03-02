@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { transform } from "typescript";
 
 export default function Hero() {
-  // const animate = useSpring({config: { duration: 2250 }, opacity: 1, from: {opacity: 0}})
+  const animate = useSpring({config: { duration: 2250 }, opacity: 1, from: {opacity: 0}})
   const allTextAnimate = 
     useSpring({
       config: {duration: 2000},

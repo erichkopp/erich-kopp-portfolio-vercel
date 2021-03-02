@@ -24,7 +24,6 @@
 .Portfolio,
 .Contact {
     width: 100%;
-    /* text-align: center; */
     font-family: "Roboto Slab", serif;
 }
 .Hero,
@@ -72,7 +71,6 @@ h3 {
     background: #000000;
     display: flex;
     flex-direction: column;
-    /* display: none; */
 }
 .social-links a {
     padding: 1rem;
@@ -85,13 +83,10 @@ h3 {
     height: 4rem;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     justify-content: flex-end;
-    /* justify-content: center; */
     position: fixed;
     background: #ffffff;
     border-bottom: 1px solid #e2e2e2;
-    /* box-shadow: 0 0 5px 1px rgb(0 0 0 / 50%); */
 }
 .Nav h1 a,
 .Nav ul a {
@@ -158,7 +153,6 @@ h3 {
     font-family: "Roboto", sans-serif;
     color: #a0a0a0;
     line-height: 1.5rem;
-    /* padding: 2rem 0; */
     padding-top: 1rem;
     padding-bottom: 2rem;
     text-align: justify;
@@ -191,7 +185,6 @@ h3 {
     left: 0;
     bottom: 0;
     height: auto;
-    /* border-top: 1px solid #c2c2c2; */
     box-shadow: 0 0 5px 0 rgb(0 0 0 / 50%);
     background: #ffffff;
 }
@@ -211,7 +204,6 @@ h3 {
     justify-content: center;
     align-items: center;
     height: 2rem;
-    /* margin: 5% 2%; */
     margin: 1rem 2%;
 }
 .Portfolio .card-arrows #left::after, .Portfolio .card-arrows-container .card-arrows #right::after {
@@ -257,7 +249,6 @@ h3 {
     text-align: center;
 }
 .Contact .contact-links {
-    /* font-family: "Roboto", sans-serif; */
     font-size: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -343,10 +334,6 @@ h3 {
     }
     .Portfolio .PortfolioCard .content .description {
         padding: 2rem 2rem;
-    }
-    .Portfolio .PortfolioCard .image-container img {
-        /* width: 100%; */
-        /* max-width: 610px; */
     }
     .Portfolio .PortfolioCard .content .portfolio-buttons {
         justify-content: flex-end;
