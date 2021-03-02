@@ -364,4 +364,8 @@ h3 {
     .About .skills-container .skills-icons div svg {
         font-size: 3rem;
     }
+    /* CONTACT STYLES */
+    .Contact form {
+        height: calc(100vh - 10vh - 8rem - 4rem - 2rem);
+    }   
 }
