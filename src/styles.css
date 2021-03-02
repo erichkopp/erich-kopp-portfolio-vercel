@@ -332,6 +332,9 @@ h3 {
         width: 50%;
         height: 100%;
     }
+    .Portfolio .PortfolioCard .image-container img {
+        max-width: 610px;
+    }
     .Portfolio .PortfolioCard .content .description {
         padding: 2rem 2rem;
     }
@@ -345,5 +348,20 @@ h3 {
     }    
     .Contact .contact-links {
         font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    /* GLOBAL STYLES */
+    .Hero, .About, .Portfolio, .Contact {
+        padding: 12vh 20% 2rem 20%;
+    }
+
+    /* ABOUT STYLES */
+    .About .skills-container .skills-icons {
+        grid-template-rows: repeat(3, 6rem);
+    }
+    .About .skills-container .skills-icons div svg {
+        font-size: 3rem;
     }
 }
