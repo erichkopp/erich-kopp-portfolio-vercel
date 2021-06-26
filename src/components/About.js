@@ -17,7 +17,7 @@ export default function About() {
       <div
         className="about-paragraph"
       >
-        I am currently working in the e-Commerce tech space. My focus is primarily on front-end technologies, but I enjoy working on all aspects of web development. Many of my personal projects incorporate other interests and hobbies of mine (photography, music, cycling) and I always have something in the works that marries my love of development with my other non-tech-related pursuits. 
+        I am currently working in the e-Commerce tech space as a QA Engineer. My focus is primarily on front-end technologies, but I work in all aspects of web development (front-end, back-end, QA testing). Many of my personal projects incorporate other interests and hobbies of mine (photography, music, cycling) and I always have something in the works that marries my love of development with my other non-tech-related pursuits. 
       </div>
 
 
