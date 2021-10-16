@@ -1,2 +1,5 @@
-# erichkopp-Portfolio
-Created with CodeSandbox
+# erichkopp-portfolio
+
+https://erichkopp.com
+
+![screenshot](screenshot.jpeg)
