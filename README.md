@@ -1,4 +1,4 @@
-# erichkopp-portfolio
+# erichkopp-portfolio-react
 
 https://erichkopp.com
 
