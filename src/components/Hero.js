@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import {useSpring, animated, config} from 'react-spring'
+import { useSpring, animated } from 'react-spring'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { transform } from "typescript";
 
 export default function Hero() {
   const animate = useSpring({config: { duration: 2250 }, opacity: 1, from: {opacity: 0}})
