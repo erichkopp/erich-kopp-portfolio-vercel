@@ -2,4 +2,4 @@
 
 https://erichkopp.com
 
-![screenshot](screenshot.jpeg)
+![screenshot](screenshot.png)
