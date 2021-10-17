@@ -32,7 +32,7 @@ export default function App() {
         <ul>
           <li>
             <Link to="/"
-            style={currentPage === "/" ? {borderBottom: "5px solid"}  : {borderBottom: ""}}
+            style={currentPage === "/" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
             >
               <FaArchway />
             </Link>
@@ -40,7 +40,7 @@ export default function App() {
           <li>
             <Link 
               to="/about"
-              style={currentPage === "/about" ? {borderBottom: "5px solid"}  : {borderBottom: ""}}
+              style={currentPage === "/about" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
             >
               <FaUserTie />
             </Link>
@@ -48,7 +48,7 @@ export default function App() {
           <li>
             <Link
               to="/portfolio"
-              style={currentPage === "/portfolio" ? {borderBottom: "5px solid"}  : {borderBottom: ""}}
+              style={currentPage === "/portfolio" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
             >
               <FaDraftingCompass />
             </Link>
@@ -56,7 +56,7 @@ export default function App() {
           <li>
             <Link
               to="/contact"
-              style={currentPage === "/contact" ? {borderBottom: "5px solid"}  : {borderBottom: ""}}
+              style={currentPage === "/contact" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
             >
               <FaEnvelopeOpenText />
             </Link>
@@ -64,7 +64,6 @@ export default function App() {
         </ul>
       </nav>
 
-        
       <Switch>
         <Route path="/about">
           <About />

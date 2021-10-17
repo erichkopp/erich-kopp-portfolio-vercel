@@ -73,9 +73,6 @@ export default function Portfolio() {
 }
 
 function PortfolioCard({ title, description, image, githubLink, siteLink }) {
-  function onPan(event, info) {
-    console.log(info.point.x, info.point.y)
-  }
   return (
     <div className="PortfolioCard">
       <h3 className="mobile-title">{title}</h3>

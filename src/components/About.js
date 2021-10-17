@@ -6,7 +6,6 @@ import {
   DiNodejsSmall,
   DiJsBadge
 } from "react-icons/di";
-import { FaFigma } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 
 export default function About() {

@@ -1,13 +1,11 @@
-import { useState, useEffect } from "react";
 import { useSpring, animated } from 'react-spring'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
-  const animate = useSpring({config: { duration: 2250 }, opacity: 1, from: {opacity: 0}})
   const allTextAnimate = 
     useSpring({
       config: {duration: 2000},
-      delay: 100,
+      delay: 500,
       to: {opacity: 1},
       from: {opacity: 0}
     })
