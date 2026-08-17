@@ -61,10 +61,19 @@ export default function Portfolio() {
           />
       }
 
+
+
       <div className="card-arrows-container">
         <div className="card-arrows">
-          <span id="left" onClick={handleCardArrows}><FaChevronLeft />Previous</span>
-          <span id="right" onClick={handleCardArrows}>Next<FaChevronRight /></span>
+          <span id="left" onClick={handleCardArrows}><FaChevronLeft />&nbsp; Previous</span>
+
+          <div id="card-indicators">{[0,1,2].map((num) => (
+            <span key={num} onClick={() => setCardNumber(num)}>
+              <p style={{ opacity: cardNumber === num ? 1 : 0.3 }}>&bull;</p>
+            </span>
+          ))}</div>
+
+          <span id="right" onClick={handleCardArrows}>Next &nbsp;<FaChevronRight /></span>
         </div>
       </div>
 

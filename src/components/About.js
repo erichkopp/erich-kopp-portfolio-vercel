@@ -6,6 +6,7 @@ import {
   DiNodejsSmall,
   DiJsBadge
 } from "react-icons/di";
+import { SiTypescript, SiClaude, SiGit } from "react-icons/si";
 import { FiFigma } from "react-icons/fi";
 
 export default function About() {
@@ -16,7 +17,9 @@ export default function About() {
       <div
         className="about-paragraph"
       >
-        I am currently working in the e-Commerce tech space as a Software Engineer. My focus is primarily on front-end technologies, but I work in all aspects of web development (front-end, back-end, QA testing). Many of my personal projects incorporate other interests and hobbies of mine (photography, music, cycling) and I always have something in the works that marries my love of development with my other non-tech-related pursuits. 
+        <span id="about-header">I have a strong background in full-stack web development, with an emphasis on front-end technologies.</span>
+        <br />
+         I have worked on all aspects of the development cycle, also including QA testing and merchant-facing technical support. This gives me a unique perspective to understand the needs of both end users and business stakeholders. I have a passion for creating user-friendly and visually appealing web applications that provide a seamless user experience. My personal projects often combine my love for development with my other interests, such as photography, music, and the outdoors. I am always looking for new challenges and opportunities to grow as a developer and to create innovative solutions that make a positive impact on users.
       </div>
 
 
@@ -25,32 +28,44 @@ export default function About() {
 
         <div className="skills-icons">
           <div>
-            <DiHtml5 />
+            <DiHtml5 aria-label="HTML" />
             <span>HTML</span>
           </div>
           <div>
-            <DiCss3 />
+            <DiCss3 aria-label="CSS" />
             <span>CSS</span>
           </div>
           <div>
-            <DiReact />
+            <DiReact aria-label="React" />
             <span>REACT</span>
           </div>
           <div>
-            <DiPython />
+            <DiPython aria-label="Python" />
             <span>PYTHON</span>
           </div>
           <div>
-            <FiFigma />
-            <span>FIGMA</span>
+            <SiTypescript aria-label="Typescript" />
+            <span>TYPESCRIPT</span>
           </div>
           <div>
-            <DiNodejsSmall />
+            <DiNodejsSmall aria-label="Node.js" />
             <span>NODEJS</span>
           </div>
           <div>
-            <DiJsBadge />
+            <DiJsBadge aria-label="JavaScript" />
             <span>JAVASCRIPT</span>
+          </div>
+          <div>
+            <FiFigma aria-label="Figma" />
+            <span>FIGMA</span>
+          </div>
+          <div>
+            <SiClaude aria-label="Claude Code" />
+            <span>CLAUDE CODE</span>
+          </div>
+          <div>
+            <SiGit aria-label="Git" />
+            <span>GIT</span>
           </div>
         </div>
       </div>

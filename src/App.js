@@ -26,13 +26,14 @@ export default function App() {
   },[location])
 
   return (
-    <div className="App">
+    <div className="App" role="main">
       <nav className="Nav">
 
         <ul>
           <li>
             <Link to="/"
             style={currentPage === "/" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
+            aria-label="home"
             >
               <FaArchway />
             </Link>
@@ -41,6 +42,7 @@ export default function App() {
             <Link 
               to="/about"
               style={currentPage === "/about" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
+              aria-label="about"
             >
               <FaUserTie />
             </Link>
@@ -49,6 +51,7 @@ export default function App() {
             <Link
               to="/portfolio"
               style={currentPage === "/portfolio" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
+              aria-label="portfolio"
             >
               <FaDraftingCompass />
             </Link>
@@ -57,6 +60,7 @@ export default function App() {
             <Link
               to="/contact"
               style={currentPage === "/contact" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
+              aria-label="contact"
             >
               <FaEnvelopeOpenText />
             </Link>

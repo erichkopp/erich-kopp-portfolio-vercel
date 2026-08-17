@@ -15,15 +15,15 @@ export default function Hero() {
       <div className="container">
         <animated.div style={allTextAnimate} className="hero-text">
           <div>erich kopp</div>
-          <div>front-end developer.</div>
+          <div id="hero-subtitle">front-end developer.</div>
         </animated.div>
       </div>
 
       <div className="social-links">
-        <a href="https://github.com/erichkopp/" target="_blank" rel="noreferrer">
+        <a href="https://github.com/erichkopp/" target="_blank" rel="noreferrer" aria-label="github">
             <FaGithub/>
         </a>
-        <a href="https://www.linkedin.com/in/erich-kopp/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/erich-kopp/" target="_blank" rel="noreferrer" aria-label="linkedin">
             <FaLinkedin />
         </a>
     </div>
