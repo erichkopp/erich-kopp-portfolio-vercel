@@ -269,13 +269,20 @@ h3 {
     display: flex;
     color: #ffffff;
     justify-content: space-around;
+
+    /* Safari, Chrome, Opera, newer Edge */
+    -webkit-user-select: none;
+    /* Old versions of Firefox */
+    -moz-user-select: none;
+    /* Internet Explorer, Old Edge */
+    -ms-user-select: none;
+    /* Standard syntax */
+    user-select: none;
 }
 
 .Portfolio .card-arrows-container .card-arrows #card-indicators {
     font-size: 48px;
     color: #000000;
-    width: 10%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,5 +531,14 @@ h3 {
 
     .Portfolio .card-arrows-container {
         border-top: 1px solid #e2e2e2;
+    }
+
+    .Portfolio .card-arrows-container .card-arrows #card-indicators {
+        font-size: 36px;
+        gap: 0.5rem;
+    }
+
+    .Portfolio .card-arrows-container .card-arrows {
+        font-size: .7rem;
     }
 }
