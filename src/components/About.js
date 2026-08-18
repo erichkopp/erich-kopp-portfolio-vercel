@@ -19,7 +19,9 @@ export default function About() {
       >
         <span id="about-header">I have a strong background in full-stack web development, with an emphasis on front-end technologies.</span>
         <br />
-         I have worked on all aspects of the development cycle, also including QA testing and merchant-facing technical support. This gives me a unique perspective to understand the needs of both end users and business stakeholders. I have a passion for creating user-friendly and visually appealing web applications that provide a seamless user experience. My personal projects often combine my love for development with my other interests, such as photography, music, and the outdoors. I am always looking for new challenges and opportunities to grow as a developer and to create innovative solutions that make a positive impact on users.
+        <br />
+        <br />
+         I have worked on all aspects of the development cycle, also including <span className="highlight">QA testing</span> and merchant-facing <span className="highlight">technical support</span>. This gives me a  <span className="highlight">unique perspective</span> to understand the needs of both end users and business stakeholders. I have a passion for creating user-friendly and <span className="highlight">visually appealing</span> web applications that provide a seamless user experience. My personal projects often combine my love for development with my other interests, such as <span className="highlight">photography, music, and the outdoors</span>. I am always looking for new challenges and opportunities to grow as a developer and to create innovative solutions that make a positive impact on users.
       </div>
 
 
