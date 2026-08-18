@@ -392,6 +392,10 @@ h3 {
     .Portfolio .card-arrows-container .card-arrows #right {
         margin: 1rem 2%;
     }
+
+    .Portfolio .card-arrows-container {
+        border-top: 1px solid #e2e2e2;
+    }
 }
 
 
@@ -502,5 +506,9 @@ h3 {
     .About .about-paragraph #about-header {
         font-size: 1.5rem;
         line-height: 1.75rem;
+    }
+
+    .Portfolio .card-arrows-container {
+        border-top: 1px solid #e2e2e2;
     }
 }
