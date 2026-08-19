@@ -45,6 +45,16 @@ export default function Portfolio() {
       {
         cardNumber === 1 &&
           <PortfolioCard
+            title="WildCoast Digital Studio"
+            description="A landing page for my freelance web development business specializing in custom-coded projects, WordPress, and e-commerce solutions."
+            image={wildcoast}
+            githubLink=""
+            siteLink="https://www.wildcoastdigitalstudio.com/"
+          />
+      }
+      {
+        cardNumber === 2 &&
+          <PortfolioCard
             title="Slippery-Hill Player"
             description="An extension of a non-profit project, Slippery-Hill.com, which catalogs old-time fiddle tunes and serves as an educational resource. Created as a mobile-friendly way to listen to these tunes. Data is periodically scraped and cleaned with a Python script."
             image={slippery}
@@ -53,7 +63,7 @@ export default function Portfolio() {
           />
       }
       {
-        cardNumber === 2 &&
+        cardNumber === 3 &&
           <PortfolioCard
             title="e-Commerce Store"
             description="A demo example of an e-Commerce store / theme."
@@ -63,23 +73,13 @@ export default function Portfolio() {
           />
       }
       {
-        cardNumber === 3 &&
+        cardNumber === 4 &&
           <PortfolioCard
             title="Theorum Wheel"
             description="A tiny music theory app that displays chord theory in a visual way. One of the the first projects I ever made, I still personally use it frequently as a quick music theory reference."
             image={theorum}
             githubLink="https://github.com/erichkopp/ChordApp"
             siteLink="https://erichkopp.github.io/TheorumWheel"
-          />
-      }
-      {
-        cardNumber === 4 &&
-          <PortfolioCard
-            title="WildCoast Digital Studio"
-            description="A landing page for my freelance web development business specializing in custom-coded projects, WordPress, and e-commerce solutions."
-            image={wildcoast}
-            githubLink=""
-            siteLink="https://www.wildcoastdigitalstudio.com/"
           />
       }
 
