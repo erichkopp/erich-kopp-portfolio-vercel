@@ -9,6 +9,8 @@ import {
 
 import { FaArchway, FaDraftingCompass, FaUserTie, FaEnvelopeOpenText } from "react-icons/fa";
 
+import { Analytics } from "@vercel/analytics/react"
+
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
@@ -18,12 +20,12 @@ import "./styles.css";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("/");
-  
+
   let location = useLocation();
 
   useEffect(() => {
     setCurrentPage(location.pathname)
-  },[location])
+  }, [location])
 
   return (
     <div className="App" role="main">
@@ -32,39 +34,39 @@ export default function App() {
         <ul>
           <li>
             <Link to="/"
-            style={currentPage === "/" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
-            aria-label="home"
+              style={currentPage === "/" ? { borderBottom: "5px solid" } : { borderBottom: "" }}
+              aria-label="home"
             >
               <FaArchway />
             </Link>
           </li>
           <li>
-            <Link 
+            <Link
               to="/about"
-              style={currentPage === "/about" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
+              style={currentPage === "/about" ? { borderBottom: "5px solid" } : { borderBottom: "" }}
               aria-label="about"
             >
               <FaUserTie />
             </Link>
-            </li>
+          </li>
           <li>
             <Link
               to="/portfolio"
-              style={currentPage === "/portfolio" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
+              style={currentPage === "/portfolio" ? { borderBottom: "5px solid" } : { borderBottom: "" }}
               aria-label="portfolio"
             >
               <FaDraftingCompass />
             </Link>
-            </li>
+          </li>
           <li>
             <Link
               to="/contact"
-              style={currentPage === "/contact" ? {borderBottom: "5px solid"} : {borderBottom: ""}}
+              style={currentPage === "/contact" ? { borderBottom: "5px solid" } : { borderBottom: "" }}
               aria-label="contact"
             >
               <FaEnvelopeOpenText />
             </Link>
-            </li>
+          </li>
         </ul>
       </nav>
 
@@ -73,7 +75,7 @@ export default function App() {
           <About />
         </Route>
         <Route path="/portfolio">
-          <Portfolio  />
+          <Portfolio />
         </Route>
         <Route path="/contact">
           <Contact />
@@ -82,6 +84,8 @@ export default function App() {
           <Hero />
         </Route>
       </Switch>
+
+      <Analytics />
     </div>
   );
 }
